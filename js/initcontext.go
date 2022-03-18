@@ -380,13 +380,12 @@ func getInternalJSModules() map[string]interface{} {
 		"k6/crypto/x509": x509.New(),
 		"k6/data":        data.New(),
 		"k6/encoding":    encoding.New(),
-		// "k6/events":      events.New(), // don't actually add this it's only used currently for tests
-		"k6/execution": execution.New(),
-		"k6/net/grpc":  grpc.New(),
-		"k6/html":      html.New(),
-		"k6/http":      http.New(),
-		"k6/metrics":   metrics.New(),
-		"k6/ws":        ws.New(),
+		"k6/execution":   execution.New(),
+		"k6/net/grpc":    grpc.New(),
+		"k6/html":        html.New(),
+		"k6/http":        http.New(),
+		"k6/metrics":     metrics.New(),
+		"k6/ws":          ws.New(),
 	}
 }
 
